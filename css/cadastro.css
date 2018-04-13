@@ -1,0 +1,23 @@
+h1{
+    margin-bottom: 20px;
+    font: bolder;
+}
+
+button{
+    margin-bottom: 20px;
+}
+
+.form-grupo{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.form-group{
+    text-align: left;
+    /* margin-left: 20px; */
+}
+
+.foto{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
