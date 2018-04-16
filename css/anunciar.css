@@ -1,0 +1,21 @@
+button{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.form-control{
+    padding-right: 40px;
+}
+
+.form-group{
+text-align: left;
+}
+
+.espacamento{
+    padding-top: 20px;
+}
+
+.card{
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
