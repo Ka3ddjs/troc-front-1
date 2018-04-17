@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Cadastro - Site Troc</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro - Site Troc</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="css/cadastro.css">
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
 
-    <body class="bg-primary">
+<body>
+
+    <section>
         <div class="container">
+
 
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-                <a class="navbar-brand" href="">Troc</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/troc_logo.png">
+                </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
                     <span class="navbar-toggler-icon"></span>
@@ -28,28 +33,20 @@
 
                     <ul class="navbar-nav ml-auto">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Início</a>
+                        <li class="nav-item espacamento">
+                            <a class="btn btn-primary btn-cadastrar" href="cadastro.html" role="button">Cadastre-se</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+                        <li class="nav-item espacaento">
+                            <a class="nav-link" href="trocar.html">
+                                <img src="img/troc_troca.png" alt="">
+                            </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="trocar.html">Trocar</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Idioma</a>
-                            <div class="dropdown-menu">
-
-                                <a class="dropdown-item" href="#">English</a>
-                                <a class="dropdown-item" href="#">Español</a>
-                                <a class="dropdown-item" href="#">Português</a>
-                                <a class="dropdown-item" href="#">French</a>
-
-                            </div>
+                        <li class="nav-item dropdown espacamento">
+                            <a href="#">
+                                <img src="img/troc_seta.png">
+                            </a>
                         </li>
 
                     </ul>
@@ -57,6 +54,8 @@
                 </div>
 
             </nav>
+
+
 
             <div class="row my-4">
 
@@ -66,19 +65,31 @@
 
                         <div class="card-body text-center">
 
-                            <!-- <form>
-                                NOME 
-                                <div>
-                                    <label for="nome">Nome completo</label>
-                                    <input type="text" id="formulario1" />
+                            <h1>Cadastre-se</h1>
+                            <form>
+                                <div class="form-group row">
+                                    <!-- <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label> -->
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Nome Completo">
+                                    </div>
                                 </div>
-
-                                EMAIL
-                                <div class="form-grupo">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-controle" id="formulario1" placeholder="name@example.com">
+                                <div class="form-group row">
+                                    <!-- <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label> -->
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                    </div>
                                 </div>
-                                DATA DE NACIMENTO
+                                <div class="form-group row">
+                                    <!-- <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label> -->
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" id="inputEmail3" placeholder="CPF">
+                                    </div>
+                                </div>
                                 <div class="form-grupo">
                                     <label for="exampleFormControlSelect1">Data de nascimento</label>
 
@@ -141,198 +152,41 @@
                                     <select name="mes" id="formulario1" class="form-grupo">
                                         <option value="ano">Ano</option>
                                     </select>
-                                    CPF
-                                    <div>
-                                        <label for="cpf">CPF:</label>
-                                        <input type="text" id="nome" placeholder="000000000-00">
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            Masculino
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        <label class="form-check-label" for="exampleRadios2">
-                                            Feminino
-                                        </label>
-                                    </div>
-
-                                    <form class="form-inline">
-                                        <label class="form" for="inlineFormInputName2">Name</label>
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="formulario2" placeholder="Jane Doe">
-
-                                        <label class="form" for="inlineFormInputGroupUsername2">Username</label>
-                                        <div class="input-group mb-2 mr-sm-2">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text">@</div>
+                                </div>
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+                                        <div class="col-sm-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                    Feminino
+                                                </label>
                                             </div>
-                                            <input type="text" class="form-controle" id="formulario2" placeholder="Username">
-                                        </div>
-
-                                        <div class="form">
-                                            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                                            <label class="form-check-label" for="inlineFormCheck">
-                                                Remember me
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    Masculino
+                                                </label>
+                                            </div>
                                             </label>
                                         </div>
-
-
-
-
-
-
-
-
-                                        <div class="botao">
-                                            <button>
-                                                <label for="enviar">ENVIAR</label>
-                                            </button>
-                                        </div>
-
-                                    </form>
-
-                                </div>
-
+                                    </div>
                         </div>
+                        </fieldset>
 
-                    </div>
-
-                </div>
-
-            </div>
-
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script> -->
-
-                <h1>Cadastre-se</h1>
-                <form>
-                        <div class="form-group row">
-                                <!-- <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label> -->
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="inputEmail3" placeholder="Nome Completo">
-                                </div>
-                              </div> 
-                    <div class="form-group row">
-                      <!-- <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label> -->
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <!-- <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label> -->
-                      <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                    <div class="col-sm-10">
-                            <input type="number" class="form-control" id="inputEmail3" placeholder="CPF">
-                          </div>
-                        </div>
-                    <div class="form-grupo">
-                            <label for="exampleFormControlSelect1">Data de nascimento</label>
-
-                            <select class="form-controle" id="formulario1">
-                                <option value="dia">Dia</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-
-                            </select>
-
-
-                            <select name="mes" id="formulario1" class="form-grupo">
-                                <option value="mes">Mês</option>
-                                <option value="jan">jan</option>
-                                <option value="mar">mar</option>
-                                <option value="fev">fev</option>
-                                <option value="abr">abr</option>
-                                <option value="mai">mai</option>
-                                <option value="jun">jun</option>
-                                <option value="jul">jul</option>
-                                <option value="ago">ago</option>
-                                <option value="set">set</option>
-                                <option value="out">out</option>
-                                <option value="nov">nov</option>
-                                <option value="dez">dez</option>
-
-
-                            </select>
-
-
-                            <select name="mes" id="formulario1" class="form-grupo">
-                                <option value="ano">Ano</option>
-                            </select>
-                        </div>
-                    <fieldset class="form-group">
-                      <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+                        <form>
+                            <div class="form-group foto">
+                                <label for="exampleFormControlFile1">Insira uma foto de Perfil</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                        </form>
+                        <!-- <div class="form-group row"> -->
                         <div class="col-sm-10">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                              Feminino
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                              Masculino
-                            </label>
-                          </div>
-                            </label>
-                          </div>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
                         </div>
-                      </div>
-                    </fieldset>
-                    
-                    <form>
-                        <div class="form-group foto">
-                            <label for="exampleFormControlFile1">Insira uma foto de Perfil</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </form>
-                    <!-- <div class="form-group row"> -->
-                      <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
-                      </div>
 
-                      
-    </body>
+    </section>
+</body>
 
 </html>

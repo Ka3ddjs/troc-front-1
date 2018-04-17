@@ -1,3 +1,7 @@
+header{
+    background-color: #4E12B2;
+}
+
 button{
     margin-left: 15px;
     margin-top: 20px;
@@ -12,10 +16,19 @@ text-align: left;
 }
 
 .espacamento{
-    padding-top: 20px;
+    margin: 0 30px;
 }
-
 .card{
     margin-bottom: 20px;
     margin-left: 15px;
+}
+
+.btn-cadastrar{
+    background-color: #4E12B2;
+    border: #4E12B2;
+    margin-top: 5px;
+}
+
+.card{
+    padding-bottom: 100px;
 }

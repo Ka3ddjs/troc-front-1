@@ -7,6 +7,21 @@ button{
     margin-bottom: 20px;
 }
 
+
+section{
+    background-color: #4E12B2;
+    /* color: white; */
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+ul{
+    margin-right: 20px;
+}
+
 .form-grupo{
     text-align: left;
     margin-bottom: 10px;
@@ -20,4 +35,18 @@ button{
 .foto{
     margin-left: 20px;
     margin-bottom: 20px;
+}
+
+.btn-cadastrar{
+    background-color: #4E12B2;
+    border: #4E12B2;
+    margin-top: 5px;
+}
+
+.espacamento{
+    margin: 0 30px;
+}
+
+.col{
+    /* opacity: 0.5; */
 }

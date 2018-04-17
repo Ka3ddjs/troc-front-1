@@ -11,62 +11,57 @@
     <link rel="stylesheet" href="css/anunciar.css">
 </head>
 
-<body class="bg-primary">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:50px; width:100%;">
 
-            <a class="navbar-brand" href="">Troc</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/troc_logo.png">
+                </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSite">
+                <div class="collapse navbar-collapse" id="navbarSite">
 
-                <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
-                    </li>
+                        <li class="nav-item espacamento">
+                            <a class="btn btn-primary btn-cadastrar" href="cadastro.html" role="button">Cadastre-se</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="cadastro.html">Cadastre-se</a>
-                    </li>
+                        <li class="nav-item espacaento">
+                            <a class="nav-link" href="trocar.html">
+                                <img src="img/troc_troca.png" alt="">
+                            </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="trocar.html">Trocar</a>
-                    </li>
+                        <li class="nav-item dropdown espacamento">
+                            <a href="#">
+                                <img src="img/troc_seta.png">
+                            </a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Idioma</a>
-                        <div class="dropdown-menu">
+                    </ul>
 
-                            <a class="dropdown-item" href="#">English</a>
-                            <a class="dropdown-item" href="#">Español</a>
-                            <a class="dropdown-item" href="#">Português</a>
-                            <a class="dropdown-item" href="#">French</a>
+                </div>
 
-                        </div>
-                    </li>
+            </nav>
 
-                </ul>
+            <div class="row my-4 card">
 
-            </div>
+                <form>
+                    <h1 class="espacamento" style="text-align:center;">Insira as Informações:</h1>
 
-        </nav>
-
-        <div class="row my-4 card">
-
-            <form>
-                <h1 class="espacamento" style="text-align:center;">Insira as Informações:</h1>
-
-                <div class="card espacamento" style="width: 18rem;">
+                    <div class="card espacamento" style="width: 18rem;">
                         <img class="card-img-top" src=".../100px180/" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Insira uma imagem do produto</h5>
-                          <a href="#" class="btn btn-primary">Escolher imagem</a>
+                            <h5 class="card-title">Insira uma imagem do produto</h5>
+                            <a href="#" class="btn btn-primary">Escolher imagem</a>
                         </div>
-                      </div>
+                    </div>
 
                     <div class="col-sm-10">
                         <input type="text" class="form-control" placeholder="Nome do Produto">
@@ -78,7 +73,8 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                </form>
+    </header>
 </body>
 
 </html>

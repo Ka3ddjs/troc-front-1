@@ -2,6 +2,20 @@ div div{
     align-items: center
 }
 
+header{
+    background-color: #4E12B2;
+}
+
 .card1{
     display: flex;
+}
+
+.btn-cadastrar{
+    background-color: #4E12B2;
+    border: #4E12B2;
+    margin-top: 5px;
+}
+
+.espacamento{
+    margin: 0 30px;
 }
