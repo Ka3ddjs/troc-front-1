@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home - Site Troc</title>
 
+    <link rel="stylesheet" href="css/stylr.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/stylr.css">
 </head>
 
 <body>
-    <!-- <section class="sec"> -->
+
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:50px; width:100%;">
@@ -30,27 +31,49 @@
 
                     <ul class="navbar-nav ml-auto">
 
-                        <li class="nav-item espacamento">
-                            <a class="btn btn-primary btn-cadastrar" href="cadastro.html" role="button">Cadastre-se</a>
-                        </li>
+                        <div class="nav-item form-row align-items-center">
+                            <div class="col-sm-3 my-1">
+                                <label class="sr-only" for="inlineFormInputName">E-mail</label>
+                                <input type="text" class="form-control" id="inlineFormInputName" placeholder="E-mail">
+                            </div>
 
-                        <li class="nav-item espacaento">
+                            <div class="col-sm-3 my-1">
+                                <label class="sr-only" for="inlineFormInputGroupUsername">Senha</label>
+                            
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="password" class="form-control" id="inlineFormInputGroupUsername" placeholder="Senha">
+                            </div>
+                            </div>
+                            <div class="col-auto my-1">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                                <label class="form-check-label text-light" for="autoSizingCheck2">
+                                Lembrar
+                                </label>
+                            </div>
+                            </div>
+                            <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                            </div>
+
+                            <a href="cadastro.html" class="text-light">Cadastre-se</a>
+
                             <a class="nav-link" href="trocar.html">
                                 <img src="img/troc_troca.png" alt="">
                             </a>
-                        </li>
-
-                        <li class="nav-item dropdown espacamento">
-                            <a href="#">
-                                <img src="img/troc_seta.png">
-                            </a>
-                        </li>
+    
+                        </div>
 
                     </ul>
-
+    
                 </div>
 
             </nav>
+
+
             <section class="sec">
                     <div class="img ">
                     <img src="img/cadeira.png" alt="cadeira" class="img-prod">
@@ -100,16 +123,20 @@
                     <img src="img/loo.jpg" alt="violão" class="img-prod">
                 </div>
 
-
-
-
             </section>
+
+        </div>
+
     </header>
 
     <footer>
         <p>2ef</p>
         <p>fec</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
